@@ -1,0 +1,29 @@
+---
+- httpRequest:
+    method: GET
+    path: "/view/cart"
+    queryStringParameters:
+      cartId:
+        - 055CA455-1DF7-45BB-8535-4F83E7266092
+  httpResponse:
+    body: {
+      code: 0,
+      message: "",
+      data: {
+        "id": "055CA455-1DF7-45BB-8535-4F83E7266092",
+        "image": "055CA455-1DF7-45BB-8535-4F83E7266092.png",
+      }
+    }
+
+- httpRequest:
+    method: GET
+    path: "/view/cart"
+    queryStringParameters:
+      cartId:
+        - no-this-cartId
+  httpResponse:
+    statusCode: 404
+    body: {
+      code: 404,
+      message: "Not Found",
+    }
