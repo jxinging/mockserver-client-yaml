@@ -9,7 +9,7 @@ import (
 	"github.com/jxinging/mockserver-client-yaml/mockyaml"
 )
 
-var mockserver = flag.String("s", "http://127.0.0.1:1080", "mock-server address, default \"http://127.0.0.1:1080\"")
+var mockserver = flag.String("s", "http://127.0.0.1:1080", "mock-server address")
 
 func main() {
 	flag.Parse()
