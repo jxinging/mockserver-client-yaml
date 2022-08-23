@@ -15,7 +15,7 @@ func main() {
 	flag.Parse()
 
 	if len(flag.Args()) != 1 {
-		fmt.Fprintf(os.Stderr, "Usage: mockyaml [-s mock-server] dir\n")
+		fmt.Fprintf(os.Stderr, "Usage: %s [-s mock-server] dir\n", os.Args[0])
 		os.Exit(1)
 	}
 

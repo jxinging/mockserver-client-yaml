@@ -36,7 +36,8 @@ curl -v -H 'Content-Type: application/json' 'http://127.0.0.1:1080/view/cart?car
 
 通过 `go run main.go {your-path}` 命令可以将指定目录下的所有 yaml 文件中定义的 mock-api 导入到 mockserver。
 
-> 也可以通过 go install 将 mockyaml 安装为可执行程序，然后直接执行 `mockyaml ./examples` 进行 mock-api 导入。
+> 也可以通过 `go install github.com/jxinging/mockserver-client-yaml@latest` 命令将该工具安装为可执行程序，
+然后直接执行 `mockserver-client-yaml ./examples` 进行 mock-api 导入。
 
 ## 参考
 - mockserver 文档： https://www.mock-server.com/#what-is-mockserver
